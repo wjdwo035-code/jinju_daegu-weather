@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#102a43" />
+    <title>진주 · 대구 날씨</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div class="brand-mark" aria-hidden="true">☼</div>
+        <div>
+          <p class="eyebrow">LOCAL WEATHER / LIVE DATA</p>
+          <h1>오늘의 날씨</h1>
+        </div>
+        <div class="updated"><span class="status-dot"></span><span id="updatedAt">불러오는 중</span></div>
+      </header>
+
+      <section class="hero" aria-labelledby="heroTitle">
+        <div>
+          <p class="eyebrow">LATEST TWO READINGS</p>
+          <h2 id="heroTitle">가장 최근에 기록된<br /><em>두 곳</em>의 날씨입니다.</h2>
+          <p class="hero-copy">저장된 관측 데이터 중 마지막 2개 기록을 기준으로 보여드립니다.</p>
+        </div>
+        <div class="sun-orbit" aria-hidden="true"><span class="sun">☀</span></div>
+      </section>
+
+      <section id="weatherGrid" class="weather-grid" aria-live="polite">
+        <div class="loading-card">날씨 데이터를 불러오는 중입니다…</div>
+      </section>
+
+      <footer class="footer">
+        <span>Source · <a href="https://github.com/wjdwo035-code/jinju_daegu-weather/blob/main/data/weather.csv" target="_blank" rel="noreferrer">weather.csv</a></span>
+        <span id="recordCount">최근 2개 기록</span>
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
