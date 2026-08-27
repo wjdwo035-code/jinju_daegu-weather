@@ -1,0 +1,3 @@
+city,observed_at,collected_at_utc,latitude,longitude,temperature_2m,temperature_unit,precipitation,precipitation_unit,weather_code
+진주,2026-08-27T10:30,2026-08-27T01:33:03.1825368Z,35.2,128.125,29.8,°C,0.00,mm,1
+대구,2026-08-27T10:30,2026-08-27T01:33:03.1825368Z,35.85,128.625,28.0,°C,0.00,mm,2
