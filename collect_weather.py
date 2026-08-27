@@ -11,8 +11,8 @@ from pathlib import Path
 TIMEZONE = "Asia/Seoul"
 OUTPUT = Path("data/weather.csv")
 LOCATIONS = {
-    "진주": (35.1796, 128.1076),
-    "대구": (35.8714, 128.6014),
+    "진주": (35.1928, 128.0847),
+    "대구": (35.8703, 128.5911),
 }
 
 
